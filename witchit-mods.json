@@ -23,14 +23,14 @@
      "needs": {},
      "sha256": "ddb22f4f714b9a255ff34d50d70e5d6705d718c6314b2cb701836df5786789cb"
     },
-    "0.4.0-nightly.202611141819": {
+    "0.4.0-nightly.202611150002": {
      "folders": [
       "Core",
       "WitchItRuntime",
       "WitchItNativeProducer"
      ],
      "needs": {},
-     "sha256": "7dfc1d1da20a0c972b0a090d4d434a309af888082fce69b04e3dfd820e485424"
+     "sha256": "f10fcea8ba5fca2004d2c11a2bf9282405cd8ce7620befb2b8b36eea8c529aed"
     }
    }
   },
@@ -55,15 +55,15 @@
      },
      "sha256": "9a1bc95b4d0598d2fe2c84f8c141e0bf1ee492bff5943f7f890699529d2583a0"
     },
-    "0.5.0-nightly.202611141819": {
+    "0.5.0-nightly.202611150002": {
      "folders": [
       "EditorTweaks"
      ],
      "needs": {
-      "core": "0.4.0-nightly.202611141819",
-      "windowkit": "0.1.0-nightly.202611141819",
-      "world-edits": "0.5.0-nightly.202611141819",
-      "worldkit": "0.1.0-nightly.202611141819"
+      "core": "0.4.0-nightly.202611150002",
+      "windowkit": "0.1.0-nightly.202611150002",
+      "world-edits": "0.5.0-nightly.202611150002",
+      "worldkit": "0.1.0-nightly.202611150002"
      },
      "sha256": "d46530e476b882cc3e85df5be76e4b1a80f422eac372cf22eff9bbed4e1263d0"
     }
@@ -91,16 +91,15 @@
      },
      "sha256": "e0fd745666f67a5d7251f86aa61834819b22476ce11d26a656b0ef9aff0ab224"
     },
-    "0.5.0-nightly.202611141819": {
+    "0.5.0-nightly.202611150002": {
      "folders": [
       "FillAPotPlus"
      ],
      "needs": {
-      "core": "0.4.0-nightly.202611141819",
-      "mapmarkers": "0.1.0-nightly.202611141819",
-      "rejoin": "0.1.0-nightly.202611141819"
+      "core": "0.4.0-nightly.202611150002",
+      "mapmarkers": "0.1.0-nightly.202611150002"
      },
-     "sha256": "ebf48b99917eb2386d00be24650504d73c1d62599ba17f86c1ea9b16670102cb"
+     "sha256": "14bb06260eda80174474ec01c5d020c5652e0f74e834e47199aeb23400bd03d9"
     }
    }
   },
@@ -116,13 +115,13 @@
     "creative"
    ],
    "versions": {
-    "0.1.0-nightly.202611141819": {
+    "0.1.0-nightly.202611150002": {
      "folders": [
       "MapMarkers"
      ],
      "needs": {
-      "core": "0.4.0-nightly.202611141819",
-      "uikit": "0.4.0-nightly.202611141819"
+      "core": "0.4.0-nightly.202611150002",
+      "uikit": "0.4.0-nightly.202611150002"
      },
      "sha256": "8c66b2d4e99b4ec62683d9cd37143f4452c6e8a1cea0a66150ddd05c58459eba"
     }
@@ -150,39 +149,38 @@
      },
      "sha256": "9ac2c5ff04c2f19a2558e355e9d80e9611d2196db25f3f3c7d56d8b5bc96bc72"
     },
-    "0.5.2-nightly.202611141819": {
+    "0.5.2-nightly.202611150002": {
      "folders": [
       "MatchRulesPlusPlus"
      ],
      "needs": {
-      "core": "0.4.0-nightly.202611141819",
-      "uikit": "0.4.0-nightly.202611141819"
+      "core": "0.4.0-nightly.202611150002",
+      "uikit": "0.4.0-nightly.202611150002"
      },
      "sha256": "0ad4e2d2860b4d535c40c4bef47ad69a9d0df7f38a20553d90b30b64763b559d"
     }
    }
   },
-  "rejoin": {
-   "description": "Dropped players rejoin Fill a Pot matches; the host pauses the round timer.",
+  "pause": {
+   "description": "The host pauses and resumes the round timer of a match.",
    "folders": [
-    "Rejoin"
+    "Pause"
    ],
-   "name": "Rejoin and pause",
+   "name": "Pause",
    "sync": false,
    "tags": [
-    "gameplay",
     "host"
    ],
    "versions": {
-    "0.1.0-nightly.202611141819": {
+    "0.1.0-nightly.202611150002": {
      "folders": [
-      "Rejoin"
+      "Pause"
      ],
      "needs": {
-      "core": "0.4.0-nightly.202611141819",
-      "uikit": "0.4.0-nightly.202611141819"
+      "core": "0.4.0-nightly.202611150002",
+      "uikit": "0.4.0-nightly.202611150002"
      },
-     "sha256": "a5b4bedce83ab2fd691d5d500a876500aa420455281cef2b85e1ef6989fff043"
+     "sha256": "e8803f1634c2b33c50939d6e6ff3eec52e3d3d1de2396e01e904e128f1bbc1a7"
     }
    }
   },
@@ -198,14 +196,14 @@
     "client"
    ],
    "versions": {
-    "0.4.0-nightly.202611141819": {
+    "0.4.0-nightly.202611150002": {
      "folders": [
       "UIKit"
      ],
      "needs": {
-      "core": "0.4.0-nightly.202611141819"
+      "core": "0.4.0-nightly.202611150002"
      },
-     "sha256": "409ebeb6e21c2d1ccf4fea944b6ddd993d648b0c07b6932f8b0ddb70369641ab"
+     "sha256": "42815ef61fdd6c3db86b3e8afd2fea0a9859492d4ff56de08da912bd2d40dc25"
     }
    }
   },
@@ -221,13 +219,13 @@
     "creative"
    ],
    "versions": {
-    "0.1.0-nightly.202611141819": {
+    "0.1.0-nightly.202611150002": {
      "folders": [
       "WindowKit"
      ],
      "needs": {
-      "core": "0.4.0-nightly.202611141819",
-      "uikit": "0.4.0-nightly.202611141819"
+      "core": "0.4.0-nightly.202611150002",
+      "uikit": "0.4.0-nightly.202611150002"
      },
      "sha256": "f18789487c5b51aa1918c5a94eb185187a7d77ad8cb360ad514e8d85bb312ce6"
     }
@@ -247,15 +245,15 @@
     "client"
    ],
    "versions": {
-    "0.5.0-nightly.202611141819": {
+    "0.5.0-nightly.202611150002": {
      "folders": [
       "BaseWorldPlus"
      ],
      "needs": {
-      "core": "0.4.0-nightly.202611141819",
-      "mapmarkers": "0.1.0-nightly.202611141819"
+      "core": "0.4.0-nightly.202611150002",
+      "mapmarkers": "0.1.0-nightly.202611150002"
      },
-     "sha256": "d4ad18f75a74dd2841f81334d90f47db62aad48d3f2988136055d0a5e4c80c86"
+     "sha256": "a5ccf815f2aad270bc82e5685909ec9326c54fe83e1d6b235f56df245a4a4f50"
     }
    }
   },
@@ -271,12 +269,12 @@
     "creative"
    ],
    "versions": {
-    "0.1.0-nightly.202611141819": {
+    "0.1.0-nightly.202611150002": {
      "folders": [
       "WorldKit"
      ],
      "needs": {
-      "core": "0.4.0-nightly.202611141819"
+      "core": "0.4.0-nightly.202611150002"
      },
      "sha256": "77ee88452ef49a8c334e5f8fd3e3ecfc75a6d9f011a331b725fba0d9e8933986"
     }
