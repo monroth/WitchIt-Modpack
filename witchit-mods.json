@@ -23,14 +23,14 @@
      "needs": {},
      "sha256": "ddb22f4f714b9a255ff34d50d70e5d6705d718c6314b2cb701836df5786789cb"
     },
-    "0.4.0-nightly.202611150127": {
+    "0.4.0-nightly.202611151556": {
      "folders": [
       "Core",
       "WitchItRuntime",
       "WitchItNativeProducer"
      ],
      "needs": {},
-     "sha256": "73dac78dfcb5c33c9d565a49a80ebfef11c5aa758d9c3846d96f4ab0f71da1ed"
+     "sha256": "f6a0c53d3b182b0708f25d1327e0243978de55c1eb018a2e6d67ecc59ab6cf11"
     }
    }
   },
@@ -55,15 +55,15 @@
      },
      "sha256": "9a1bc95b4d0598d2fe2c84f8c141e0bf1ee492bff5943f7f890699529d2583a0"
     },
-    "0.5.0-nightly.202611150127": {
+    "0.5.0-nightly.202611151556": {
      "folders": [
       "EditorTweaks"
      ],
      "needs": {
-      "core": "0.4.0-nightly.202611150127",
-      "windowkit": "0.1.0-nightly.202611150127",
-      "world-edits": "0.5.0-nightly.202611150127",
-      "worldkit": "0.1.0-nightly.202611150127"
+      "core": "0.4.0-nightly.202611151556",
+      "windowkit": "0.1.0-nightly.202611151556",
+      "world-edits": "0.5.0-nightly.202611151556",
+      "worldkit": "0.1.0-nightly.202611151556"
      },
      "sha256": "d46530e476b882cc3e85df5be76e4b1a80f422eac372cf22eff9bbed4e1263d0"
     }
@@ -91,15 +91,15 @@
      },
      "sha256": "e0fd745666f67a5d7251f86aa61834819b22476ce11d26a656b0ef9aff0ab224"
     },
-    "0.5.0-nightly.202611150127": {
+    "0.5.0-nightly.202611151556": {
      "folders": [
       "FillAPotPlus"
      ],
      "needs": {
-      "core": "0.4.0-nightly.202611150127",
-      "mapmarkers": "0.1.0-nightly.202611150127"
+      "core": "0.4.0-nightly.202611151556",
+      "mapmarkers": "0.1.0-nightly.202611151556"
      },
-     "sha256": "65b17d44d7baadeb5eb116752923dd1f3852daa65fff413f4f8e39bdbfa662a4"
+     "sha256": "c1cd1f32df31f77261f07dbe1ce1d05f4026123dbecbcc8f6d9c34a452e18f4b"
     }
    }
   },
@@ -115,15 +115,15 @@
     "creative"
    ],
    "versions": {
-    "0.1.0-nightly.202611150127": {
+    "0.1.0-nightly.202611151556": {
      "folders": [
       "MapMarkers"
      ],
      "needs": {
-      "core": "0.4.0-nightly.202611150127",
-      "uikit": "0.4.0-nightly.202611150127"
+      "core": "0.4.0-nightly.202611151556",
+      "uikit": "0.4.0-nightly.202611151556"
      },
-     "sha256": "8c66b2d4e99b4ec62683d9cd37143f4452c6e8a1cea0a66150ddd05c58459eba"
+     "sha256": "d6f19fe282464bf7da01659468efe68eca5603bd446048b50ef64a70f2169747"
     }
    }
   },
@@ -149,15 +149,15 @@
      },
      "sha256": "9ac2c5ff04c2f19a2558e355e9d80e9611d2196db25f3f3c7d56d8b5bc96bc72"
     },
-    "0.5.2-nightly.202611150127": {
+    "0.5.2-nightly.202611151556": {
      "folders": [
       "MatchRulesPlusPlus"
      ],
      "needs": {
-      "core": "0.4.0-nightly.202611150127",
-      "uikit": "0.4.0-nightly.202611150127"
+      "core": "0.4.0-nightly.202611151556",
+      "uikit": "0.4.0-nightly.202611151556"
      },
-     "sha256": "0ad4e2d2860b4d535c40c4bef47ad69a9d0df7f38a20553d90b30b64763b559d"
+     "sha256": "949328b11d257045d3336ad80b7272dd02569df4acddd65a2ab1c3f5c2fd15a5"
     }
    }
   },
@@ -172,13 +172,13 @@
     "host"
    ],
    "versions": {
-    "0.1.0-nightly.202611150127": {
+    "0.1.0-nightly.202611151556": {
      "folders": [
       "Pause"
      ],
      "needs": {
-      "core": "0.4.0-nightly.202611150127",
-      "uikit": "0.4.0-nightly.202611150127"
+      "core": "0.4.0-nightly.202611151556",
+      "uikit": "0.4.0-nightly.202611151556"
      },
      "sha256": "e8803f1634c2b33c50939d6e6ff3eec52e3d3d1de2396e01e904e128f1bbc1a7"
     }
@@ -196,14 +196,14 @@
     "client"
    ],
    "versions": {
-    "0.4.0-nightly.202611150127": {
+    "0.4.0-nightly.202611151556": {
      "folders": [
       "UIKit"
      ],
      "needs": {
-      "core": "0.4.0-nightly.202611150127"
+      "core": "0.4.0-nightly.202611151556"
      },
-     "sha256": "42815ef61fdd6c3db86b3e8afd2fea0a9859492d4ff56de08da912bd2d40dc25"
+     "sha256": "034c6c2213b387f1f4aa61024b87824c0a854727f0d7a882a9577f1130e741f9"
     }
    }
   },
@@ -219,13 +219,13 @@
     "creative"
    ],
    "versions": {
-    "0.1.0-nightly.202611150127": {
+    "0.1.0-nightly.202611151556": {
      "folders": [
       "WindowKit"
      ],
      "needs": {
-      "core": "0.4.0-nightly.202611150127",
-      "uikit": "0.4.0-nightly.202611150127"
+      "core": "0.4.0-nightly.202611151556",
+      "uikit": "0.4.0-nightly.202611151556"
      },
      "sha256": "f18789487c5b51aa1918c5a94eb185187a7d77ad8cb360ad514e8d85bb312ce6"
     }
@@ -245,15 +245,15 @@
     "client"
    ],
    "versions": {
-    "0.5.0-nightly.202611150127": {
+    "0.5.0-nightly.202611151556": {
      "folders": [
       "BaseWorldPlus"
      ],
      "needs": {
-      "core": "0.4.0-nightly.202611150127",
-      "mapmarkers": "0.1.0-nightly.202611150127"
+      "core": "0.4.0-nightly.202611151556",
+      "mapmarkers": "0.1.0-nightly.202611151556"
      },
-     "sha256": "8b08466aa2f78424b95fecb65e5e95d3c764fb5de345f9168e7702eba0d1c938"
+     "sha256": "fd57cacb7eaa63201c980314482c775b8d045ad6904ca49e2ab7aed6521f9356"
     }
    }
   },
@@ -269,12 +269,12 @@
     "creative"
    ],
    "versions": {
-    "0.1.0-nightly.202611150127": {
+    "0.1.0-nightly.202611151556": {
      "folders": [
       "WorldKit"
      ],
      "needs": {
-      "core": "0.4.0-nightly.202611150127"
+      "core": "0.4.0-nightly.202611151556"
      },
      "sha256": "77ee88452ef49a8c334e5f8fd3e3ecfc75a6d9f011a331b725fba0d9e8933986"
     }
