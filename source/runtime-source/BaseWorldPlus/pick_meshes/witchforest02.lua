@@ -1,2 +1,0 @@
--- Generated world mesh index; tooling/FoliageGeometry/generate.py.
-return {["/Game/Environment/WitchHouse/SM_WitchNote02.SM_WitchNote02"]="6fdbb55fa9ec355c",["/Game/Environment/WitchHouse/SM_WitchNote03.SM_WitchNote03"]="d31b4b1b5f775445",["/Game/Environment/WitchHouse/SM_WitchNote06.SM_WitchNote06"]="6f8a0e8dab2f80b1",["/Game/Environment/WitchHouse/SM_WitchNote07.SM_WitchNote07"]="3f6d41d5526d4b56",["/Game/Environment/WitchHouse/SM_WitchNote09.SM_WitchNote09"]="90c427227a5056df",["/Game/Props/Lights/SM_FireCross.SM_FireCross"]="784c6b92a3a31118"}
