@@ -1,0 +1,19 @@
+UIKit is `return function(R, C) ... return U end`. It exports only the helpers in ARCH.md. All hooks are installed once; controls live in native trees. World teardown drops references. Destruct removes screen callback addresses. There are no recurring jobs.
+
+Widgets accept `(parent, opts)` and return the native widget plus a silent setter. Parents are real panels. `section` makes a VerticalBox; `scroll` makes a ScrollBox, optionally inside a height-limited SizeBox. Pass the returned native panel as the next parent. Controls use `label`, `value`, `default`, `tooltip`, `enabled`, and `on_click`/`on_change`/`on_commit`. Text uses `text` and optional wrap `width`. Slider/number use `min`, `max`, `step`, `kind='int'`, optional `input_max`, `infinite`, and `suffix`. Combo options are `{label=...,value=...}` rows. Text/button setters replace text; control setters replace values; section setter changes visibility; scroll setter scrolls to a widget, or to the start with nil.
+
+`on_press(widget, fn, {area})` gives a press of the left button on that widget to fn — one press goes to the one control under the mouse (the innermost); `area` finds a widget the engine does not hit-test by the mouse's place on it. `on_any_press(fn)` hears every press after that control (a window coming up, an open list closing). `under(widget, area)` says whether the mouse is on a shown widget.
+
+`colour(parent, {h, s, v, on_change(h, s, v)})` is the mods' one colour picker (every colour control uses it: windows and the game's panels): the shape the player chose in Settings > Mods (square, wheel, ring and triangle, ring and square), the game's sliders for H S V and R G B, a #RRGGBB field and the recent colours; it returns the widget and `set(h, s, v)`. `rgb(h, s, v)` gives red, green, blue (0..1), `hsv(r, g, b)` hue (0..360), saturation, value.
+
+`menu_entry` accepts a cooked screen asset name (MainMenu or a Play asset) or a full class path; `anchor` is a bound-child name. Its click receives the owning screen. New entries append with the anchor's slot style, leaving native controls attached. `rules_tab` uses a feature page id and returns a page handle; `build` receives the native page panel. `open_rules` accepts that handle, its id, or its label. Only native Rules routes are used; every in-game return restores input after CloseSubordinateMenu completes, including Back requests that already name the original menu.
+
+Mods reads the six bundled package manifests. Optional toggles atomically edit only the installed manifest's `enabled` value, so they take effect on next launch; Core and UIKit are locked. No live package unload is attempted. Updater status/latest use `C.mods.status()` and `request('latest')`. Exact host sync calls C.mods.request('exact',packages) with the selected host's public package map. The Modded browser retains unsupported advertisements and never strips advertised names.
+
+Core's hosting preference is `VanillaServer`. Compatibility describes received inventories; absent inventories have no mismatch or kick deadline. UIKit never kicks, changes gameplay, or controls match admission.
+
+Settings/Hotkeys edits Runtime's declared inventory through R.hotkeys/R.set_hotkey and exclusive R.capture_hotkey. It supports capture, key/modifier choices, reset, disable and conflict messages. Domain failures use U.message/U.question; actual Core mismatch and native save-failure facts are displayed directly. Integration decisions are recorded in evidence/rwint/api-review.md.
+
+Offline checks under `tests/` cover fixed-API startup and real hook ordering for control edits, cached menus/shared Rules tabs, subordinate Back, and nested native dialogs. They do not establish live Slate appearance, native PRE interception, networking, or two-player Creative acceptance.
+
+A mod's options go to Settings > Mods through the runtime's `R.options(build)`: the mod's name (from its manifest), then the controls `build(rows, U)` adds and returns.
