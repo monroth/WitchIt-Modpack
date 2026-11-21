@@ -1,7 +1,7 @@
 {
  "mods": {
   "core": {
-   "description": "Mod services, the runtime, its native part and the updater.",
+   "description": "Library: the runtime, its native part and the updater. Everything needs it.",
    "folders": [
     "Core",
     "WitchItRuntime",
@@ -31,11 +31,20 @@
      ],
      "needs": {},
      "sha256": "f6a0c53d3b182b0708f25d1327e0243978de55c1eb018a2e6d67ecc59ab6cf11"
+    },
+    "0.5.0-nightly.202611210204": {
+     "folders": [
+      "Core",
+      "WitchItRuntime",
+      "WitchItNativeProducer"
+     ],
+     "needs": {},
+     "sha256": "714bf1a25360f6c251eae7a0efa4e1ebc8496045a0465f31e90b2f975bdb6bac"
     }
    }
   },
   "editor-tweaks": {
-   "description": "Hide tool for scenery in Creative.",
+   "description": "A tool to actually hide scenery in Creative, for World edits.",
    "folders": [
     "EditorTweaks"
    ],
@@ -66,11 +75,45 @@
       "worldkit": "0.1.*"
      },
      "sha256": "d46530e476b882cc3e85df5be76e4b1a80f422eac372cf22eff9bbed4e1263d0"
+    },
+    "0.5.1-nightly.202611210204": {
+     "folders": [
+      "EditorTweaks"
+     ],
+     "needs": {
+      "core": "0.5.0-nightly.202611210204",
+      "windowkit": "0.2.0-nightly.202611210204",
+      "world-edits": "0.5.1-nightly.202611210204",
+      "worldkit": "0.2.0-nightly.202611210204"
+     },
+     "sha256": "48540a602d67418927decc4e066df065a8442c71f6a12d9edb2ce6786760a284"
+    }
+   }
+  },
+  "effectkit": {
+   "description": "Library of effects: particles, streams toward targets, colours of objects.",
+   "folders": [
+    "EffectKit"
+   ],
+   "name": "EffectKit",
+   "sync": false,
+   "tags": [
+    "technical"
+   ],
+   "versions": {
+    "0.1.0-nightly.202611210204": {
+     "folders": [
+      "EffectKit"
+     ],
+     "needs": {
+      "core": "0.5.0-nightly.202611210204"
+     },
+     "sha256": "c72187bcb68f1a111104ced080fe6270e13bd803c127e883505d1ee35ab0db6c"
     }
    }
   },
   "fillapot-plus": {
-   "description": "Fill a Pot+ rules, maps and map tools.",
+   "description": "More Fill a Pot: new maps, Creative compatibility, new features and vanilla bug fixes.",
    "folders": [
     "FillAPotPlus"
    ],
@@ -78,6 +121,7 @@
    "sync": true,
    "tags": [
     "gameplay",
+    "maps",
     "host",
     "client"
    ],
@@ -100,11 +144,23 @@
       "mapmarkers": "0.1.*"
      },
      "sha256": "df311885bc6cf241cb464c6cc72a6b3c51ca8331eb4d662f79e81ae75d80ab0e"
+    },
+    "0.6.0-nightly.202611210204": {
+     "folders": [
+      "FillAPotPlus"
+     ],
+     "needs": {
+      "core": "0.5.0-nightly.202611210204",
+      "effectkit": "0.1.0-nightly.202611210204",
+      "mapmarkers": "0.2.0-nightly.202611210204",
+      "worldkit": "0.2.0-nightly.202611210204"
+     },
+     "sha256": "ff427eb78429f38a1dc25e95656b0e9dde15101c708f4c6133a7a9962bb738b9"
     }
    }
   },
   "mapmarkers": {
-   "description": "Marker blocks of maps: placing, looks and their settings.",
+   "description": "Library of the Creative tools: marker objects for your maps.",
    "folders": [
     "MapMarkers"
    ],
@@ -124,11 +180,23 @@
       "uikit": "0.4.*"
      },
      "sha256": "d6f19fe282464bf7da01659468efe68eca5603bd446048b50ef64a70f2169747"
+    },
+    "0.2.0-nightly.202611210204": {
+     "folders": [
+      "MapMarkers"
+     ],
+     "needs": {
+      "core": "0.5.0-nightly.202611210204",
+      "effectkit": "0.1.0-nightly.202611210204",
+      "uikit": "0.5.0-nightly.202611210204",
+      "worldkit": "0.2.0-nightly.202611210204"
+     },
+     "sha256": "eee5eeeb1b786eecd2bf5091c003db7d6c588dd01b66df4b102d2736526e266f"
     }
    }
   },
   "matchrules-plus": {
-   "description": "Rule presets and extra match options.",
+   "description": "Extra match rules beside the game's own, easy sharing of rules, and yes, bug fixes too.",
    "folders": [
     "MatchRulesPlusPlus"
    ],
@@ -158,18 +226,30 @@
       "uikit": "0.4.*"
      },
      "sha256": "949328b11d257045d3336ad80b7272dd02569df4acddd65a2ab1c3f5c2fd15a5"
+    },
+    "0.6.0-nightly.202611210204": {
+     "folders": [
+      "MatchRulesPlusPlus"
+     ],
+     "needs": {
+      "core": "0.5.0-nightly.202611210204",
+      "effectkit": "0.1.0-nightly.202611210204",
+      "uikit": "0.5.0-nightly.202611210204"
+     },
+     "sha256": "2262864e2b5d66cb176656d89cb6d4f558d5a3fed30ea49721f52e2d3947a421"
     }
    }
   },
   "pause": {
-   "description": "The host pauses and resumes the round timer of a match.",
+   "description": "The host pauses and resumes the round timer.",
    "folders": [
     "Pause"
    ],
    "name": "Pause",
    "sync": false,
    "tags": [
-    "host"
+    "host",
+    "utility"
    ],
    "versions": {
     "0.1.0": {
@@ -181,11 +261,21 @@
       "uikit": "0.4.*"
      },
      "sha256": "e8803f1634c2b33c50939d6e6ff3eec52e3d3d1de2396e01e904e128f1bbc1a7"
+    },
+    "0.1.1-nightly.202611210204": {
+     "folders": [
+      "Pause"
+     ],
+     "needs": {
+      "core": "0.5.0-nightly.202611210204",
+      "uikit": "0.5.0-nightly.202611210204"
+     },
+     "sha256": "1dd5dcced04c5d8d6534ae88d1fee7c05550a0de6e697ced1c67f21cde77e3c2"
     }
    }
   },
   "uikit": {
-   "description": "Menus, settings and shortcuts of the mods in the game's own screens.",
+   "description": "Library: the mods' menus, settings and shortcuts.",
    "folders": [
     "UIKit"
    ],
@@ -204,11 +294,20 @@
       "core": "0.4.*"
      },
      "sha256": "034c6c2213b387f1f4aa61024b87824c0a854727f0d7a882a9577f1130e741f9"
+    },
+    "0.5.0-nightly.202611210204": {
+     "folders": [
+      "UIKit"
+     ],
+     "needs": {
+      "core": "0.5.0-nightly.202611210204"
+     },
+     "sha256": "af75c49385290c600509a56a2998d726343609e17f68ecfc843e3ad2f15d38e2"
     }
    }
   },
   "windowkit": {
-   "description": "Tool windows for the editors.",
+   "description": "Library of the Creative tools: tool windows for extra UI.",
    "folders": [
     "WindowKit"
    ],
@@ -228,11 +327,21 @@
       "uikit": "0.4.*"
      },
      "sha256": "f18789487c5b51aa1918c5a94eb185187a7d77ad8cb360ad514e8d85bb312ce6"
+    },
+    "0.2.0-nightly.202611210204": {
+     "folders": [
+      "WindowKit"
+     ],
+     "needs": {
+      "core": "0.5.0-nightly.202611210204",
+      "uikit": "0.5.0-nightly.202611210204"
+     },
+     "sha256": "52ab56324c7e962451acfa24d42cae27dd3fa676e6d8261cc9d8f00c06697cf1"
     }
    }
   },
   "world-edits": {
-   "description": "Hidden scenery, source geometry and teleporters of maps, for everyone in the session.",
+   "description": "Hidden scenery, teleporters and map geometry of custom maps.",
    "folders": [
     "BaseWorldPlus"
    ],
@@ -254,11 +363,21 @@
       "mapmarkers": "0.1.*"
      },
      "sha256": "fd57cacb7eaa63201c980314482c775b8d045ad6904ca49e2ab7aed6521f9356"
+    },
+    "0.5.1-nightly.202611210204": {
+     "folders": [
+      "BaseWorldPlus"
+     ],
+     "needs": {
+      "core": "0.5.0-nightly.202611210204",
+      "mapmarkers": "0.2.0-nightly.202611210204"
+     },
+     "sha256": "05a00c9bd939583218dfff951804151b4f84b0c2062793a79c8e1e6a5e41cab0"
     }
    }
   },
   "worldkit": {
-   "description": "Selection, changes and undo shared by the Creative editors.",
+   "description": "Library of the Creative tools: selection, changes and undo.",
    "folders": [
     "WorldKit"
    ],
@@ -277,6 +396,15 @@
       "core": "0.4.*"
      },
      "sha256": "77ee88452ef49a8c334e5f8fd3e3ecfc75a6d9f011a331b725fba0d9e8933986"
+    },
+    "0.2.0-nightly.202611210204": {
+     "folders": [
+      "WorldKit"
+     ],
+     "needs": {
+      "core": "0.5.0-nightly.202611210204"
+     },
+     "sha256": "832099859806a255702394f73259a4c8167d0e4cd5e6c408fe4a5fe6d1f97dc7"
     }
    }
   }
